@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2 (Python 3.11.4 on win32)" generated="2025-05-28T10:14:15.845812" rpa="false" schemaversion="5">
+<suite id="s1" name="Mobile" source="D:\Projetos\Mobile">
+<suite id="s1-s1" name="Test" source="D:\Projetos\Mobile\test">
+<suite id="s1-s1-s1" name="TED" source="D:\Projetos\Mobile\test\TED.robot">
+<test id="s1-s1-s1-t1" name="First Scenario" line="6">
+<kw name="Open TED App" owner="openApp">
+<kw name="Open Application" owner="AppiumLibrary">
+<arg>remote_url=http://localhost:4723/wd/hub</arg>
+<arg>automationName=UIAutomator2</arg>
+<arg>platformName=android</arg>
+<arg>deviceName=Google Pixel 7 Pro</arg>
+<arg>app=D:\\Projetos\\Mobile\\resource\\utils${/}..${/}app${/}TED.apk</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://appium.io/docs/en/2.1/cli/args/
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="PASS" start="2025-05-28T10:14:16.198378" elapsed="28.388460"/>
+</kw>
+<status status="PASS" start="2025-05-28T10:14:16.197359" elapsed="28.389479"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-28T10:15:14.587283" level="INFO">Slept 30 seconds.</msg>
+<arg>30</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-28T10:14:44.586838" elapsed="30.000445"/>
+</kw>
+<status status="PASS" start="2025-05-28T10:14:16.196340" elapsed="58.390943"/>
+</test>
+<status status="PASS" start="2025-05-28T10:14:15.889180" elapsed="58.699817"/>
+</suite>
+<status status="PASS" start="2025-05-28T10:14:15.886485" elapsed="58.703936"/>
+</suite>
+<status status="PASS" start="2025-05-28T10:14:15.847294" elapsed="58.744681"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Mobile" id="s1" pass="1" fail="0" skip="0">Mobile</stat>
+<stat name="Test" id="s1-s1" pass="1" fail="0" skip="0">Mobile.Test</stat>
+<stat name="TED" id="s1-s1-s1" pass="1" fail="0" skip="0">Mobile.Test.TED</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
