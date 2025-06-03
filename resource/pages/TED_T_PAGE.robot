@@ -19,3 +19,6 @@ ${MotivatorsMsg}       xpath=//android.widget.TextView[@content-desc="What are y
 ## Lists
 ${InterestsList}       xpath=//android.view.ViewGroup[@resource-id="Topics_List"]
 ${MotivatorsList}      xpath=//android.view.ViewGroup[@resource-id="Motivators_List"]
+
+## Inputs
+${EmailSignUp}         xpath=//android.widget.EditText[@resource-id="EmailInput>Input"]

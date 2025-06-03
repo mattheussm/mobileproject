@@ -1,7 +1,7 @@
 *** Settings ***
 Resource    ../../base.resource
 Resource    ../pages/TED_T_PAGE.robot
-Library    String
+
 
 *** Keywords ***
 
@@ -42,6 +42,11 @@ Select Motivators By Name
         Click Element    ${locator}
     END
 
+Insert Email to Sign Up
+    ${email}=    FakerLibrary.Email
+    Wait Until Element Is Visible    ${EmailSignUp}
+    Input Text    ${EmailSignUp}    ${email}
 
+ 
 
     

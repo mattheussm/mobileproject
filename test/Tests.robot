@@ -13,3 +13,5 @@ Register New User
     Click On Next Button
     Select Motivators By Name    A sense of hope    Professional growth
     Click On Next Button
+    Insert Email to Sign Up
+    Click On Next Button
