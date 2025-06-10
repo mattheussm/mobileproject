@@ -47,6 +47,18 @@ Insert Email to Sign Up
     Wait Until Element Is Visible    ${EmailSignUp}
     Input Text    ${EmailSignUp}    ${email}
 
+Insert First and Last Name and Create a Password
+    ${FirstName}    FakerLibrary.First Name
+    Wait Until Element Is Visible    ${FirstNameInpt}
+    Input Text    ${FirstNameInpt}    ${FirstName}
+
+    ${LastName}    FakerLibrary.Last Name
+    Wait Until Element Is Visible    ${LastNameInpt}
+    Input Text    ${LastNameInpt}    ${LastName}
+
+    ${FirstPassword}    FakerLibrary.Password
+    Wait Until Element Is Visible    ${FirstPasswordInpt}
+    Input Text    ${FirstPasswordInpt}    ${FirstPassword}
  
 
     

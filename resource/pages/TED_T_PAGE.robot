@@ -22,3 +22,6 @@ ${MotivatorsList}      xpath=//android.view.ViewGroup[@resource-id="Motivators_L
 
 ## Inputs
 ${EmailSignUp}         xpath=//android.widget.EditText[@resource-id="EmailInput>Input"]
+${FirstNameInpt}       xpath=//android.widget.EditText[@resource-id="FirstName>Input"]
+${LastNameInpt}        xpath=//android.widget.EditText[@resource-id="LastName>Input"]
+${FirstPasswordInpt}  xpath=//android.widget.EditText[@resource-id="Password>Input"]  
