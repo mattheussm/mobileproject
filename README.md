@@ -57,7 +57,13 @@ pip install -r requirements.txt
 adb devices
 ```
 
-### 4. Inicie o servidor Appium pelo Appium Inspector
+### 4. Inicie o servidor Appium manualmente via terminal
+
+```bash
+appium -pa wd/hub
+```
+
+### 5. Inicie o servidor Appium pelo Appium Inspector
 
 Use a configuração padronizada abaixo:
 
@@ -68,12 +74,6 @@ Use a configuração padronizada abaixo:
   "appium:deviceName": "Modelo do aparelho usado no emulador ou aparelho físico",
   "appium:app": "Caminho do APK no seu computador"
 }
-```
-
-### 5. Inicie o servidor Appium manualmente via terminal
-
-```bash
-appium -pa wd/hub
 ```
 
 ### 6. Execute os testes com Robot Framework
