@@ -16,7 +16,7 @@ Este projeto tem como objetivo automatizar testes funcionais no aplicativo **TED
 ## ✅ Casos de Teste Planejados
 
 ### Caminhos Felizes (fluxos positivos)
-1. Cadastrar um novo usuário 🔄 *(em andamento)*
+1. Cadastrar um novo usuário ✅
 2. Login com credenciais válidas
 3. Buscar uma palestra e reproduzir vídeo
 4. Adicionar uma palestra aos favoritos
@@ -31,11 +31,61 @@ Este projeto tem como objetivo automatizar testes funcionais no aplicativo **TED
 ## 🚧 Status do Projeto
 
 - [x] Estrutura inicial configurada
-- [ ] Caso de teste: Cadastro de novo usuário *(em andamento)*
+- [x] Caso de teste: Cadastro de novo usuário
 - [ ] Demais casos de teste ainda não iniciados
 
 ---
+## ▶️ Como Executar os Testes
 
+### 1. Clone o repositório
+
+```bash
+git clone https://github.com/seu-usuario/ted-automation-appium.git
+cd ted-automation-appium
+```
+
+### 2. Instale as dependências
+
+```bash
+pip install -r requirements.txt
+```
+
+### 3. Inicie o emulador Android (via VS Code ou Android Studio)
+
+> Certifique-se de que o dispositivo esteja visível com:
+```bash
+adb devices
+```
+
+### 4. Inicie o servidor Appium pelo Appium Inspector
+
+Use a configuração padronizada abaixo:
+
+```json
+{
+  "appium:automationName": "UIAutomator2",
+  "platformName": "android",
+  "appium:deviceName": "Modelo do aparelho usado no emulador ou aparelho físico",
+  "appium:app": "Caminho do APK no seu computador"
+}
+```
+
+### 5. Inicie o servidor Appium manualmente via terminal
+
+```bash
+appium -pa wd/hub
+```
+
+### 6. Execute os testes com Robot Framework
+
+```bash
+robot -d results -i newuser test/Tests.robot
+```
+
+- `-d results`: define a pasta de saída dos relatórios
+- `-i newuser`: executa apenas testes marcados com a tag `newuser`
+
+  
 ## 📌 Observações
 Os testes estão sendo desenvolvidos e evoluídos em ciclos curtos.
 
