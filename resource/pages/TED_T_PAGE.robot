@@ -15,6 +15,7 @@ ${WelcomeText}         xpath=//android.widget.TextView[@resource-id="Typography"
 ${InterestsPageMsg}    xpath=//android.widget.TextView[@content-desc="What interests you?"]
 ${MotivatorsScreen}    xpath=//android.view.ViewGroup[@content-desc="MotivatorsScreen"]
 ${MotivatorsMsg}       xpath=//android.widget.TextView[@content-desc="What are you looking for?"]
+${HomeScreen}          xpath=//android.widget.ScrollView[@content-desc="Home Screen"]
 
 ## Lists
 ${InterestsList}       xpath=//android.view.ViewGroup[@resource-id="Topics_List"]

@@ -16,4 +16,3 @@ Register New User
     Insert Email to Sign Up
     Click On Next Button
     Insert First and Last Name and Create a Password
-    Click On Next Button

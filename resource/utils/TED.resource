@@ -59,6 +59,8 @@ Insert First and Last Name and Create a Password
     ${FirstPassword}    FakerLibrary.Password
     Wait Until Element Is Visible    ${FirstPasswordInpt}
     Input Text    ${FirstPasswordInpt}    ${FirstPassword}
- 
-
+     
+    Click On Next Button
+    
+    Wait Until Element Is Visible    ${HomeScreen}
     
